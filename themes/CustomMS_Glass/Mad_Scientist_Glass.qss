@@ -1,0 +1,235 @@
+QTabWidget::pane {
+    border: 0;
+    background: transparent;
+}
+
+QFrame#brain_panel { 
+    border-radius: 10px;
+    background-color: rgba(185, 220, 255, 32);
+}
+
+QPlainTextEdit#ai_log { 
+    color: #ffaa00;
+    font-family: "Fixedsys";
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(9, 9, 9, 75);
+}
+
+QFrame#main_log_panel { 
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 10px;
+    background-color: rgba(185, 220, 255, 32);
+}
+
+QPlainTextEdit#main_log_text { 
+    color: #00ff7f;
+    font-family: "Fixedsys";
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 75);
+}
+
+QFrame#top_artists_panel { 
+    border-radius: 10px;
+    background-color: rgba(185, 220, 255, 32);
+}
+
+QListWidget#top_list { 
+    color: #ffaa00;
+    font-family: "Fixedsys";
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 75);
+}
+
+QFrame#history_panel { 
+    border-radius: 10px;
+    background-color: rgba(185, 220, 255, 32);
+}
+
+QListWidget#history_list { 
+    color: #00ff7f;
+    font-family: "Fixedsys";
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 75);
+}
+
+QFrame#queue_panel { 
+    border-radius: 10px;
+    background-color: rgba(185, 220, 255, 32);
+}
+
+QListWidget#queue_list { 
+    color: #00ff7f;
+    font-family: "Fixedsys";
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 75);
+}
+
+QLabel#track_title { font-family: "Consolas";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+QFrame#search_panel { 
+    border-color: rgba(255, 255, 255, 32);
+    border-radius: 10px;
+    
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 75);
+}
+
+QSlider::groove:horizontal {
+    height: 7px;
+    background-color: #303036;
+    border-radius: 3px;
+}
+
+QSlider::sub-page:horizontal {
+    border-radius: 3px;
+    background-color: #ff1a1a;
+}
+
+QSlider::handle:horizontal {
+    width: 13px;
+    height: 13px;
+    margin: -3px 0;
+    background-color: #ff1a1a;
+    border-radius: 6px;
+}
+
+QLabel#quickSettingLabel { color: #ffffff;
+    font-weight: bold;
+}
+
+QFrame#quick_panel { border-radius: 10px;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 64);
+    background-color: rgba(0, 0, 0, 75);
+}
+
+QCheckBox::indicator { background-color: rgba(30, 30, 30, 0);
+    border-color: #7e7e7e;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+QFrame#scout_strip { 
+    font-family: "Arial";
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 150);
+}
+
+QWidget[spyderThemeId="scout_primary"] { color: #00ff7f;
+    font-family: "Fixedsys";
+}
+
+QWidget[spyderThemeId="scout_secondary"] { color: #b3eec2;
+    font-family: "Fixedsys";
+}
+
+QWidget[spyderThemeId="negative_rating"] { background-color: #ff1a1a; }
+
+QWidget[spyderThemeId="positive_rating"] { background-color: #005500; }
+
+QWidget[spyderThemeId="rating_score"] { background-color: rgba(4, 4, 4, 0);
+    color: #ffff00;
+    font-family: "Fixedsys";
+    font-weight: normal;
+}
+
+QTabBar::tab { font-weight: normal; }
+
+QCheckBox { background-color: rgba(4, 4, 4, 0);
+    border-color: #7e7e7e;
+}
+
+QCheckBox::indicator:checked { background-color: #ff1a1a;
+    width: 16px;
+    height: 16px;
+    border-color: #7e7e7e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+QCheckBox::indicator:disabled { background-color: rgba(30, 30, 30, 0);
+    width: 16px;
+    height: 16px;
+    border-color: #7e7e7e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+QSlider[spyderThemeId="temperature"]::groove:horizontal {
+    height: 7px;
+    background-color: #2e2e34;
+    border-radius: 3px;
+    background-color: #303036;
+    background: #444444;
+}
+
+QSlider[spyderThemeId="temperature"]::sub-page:horizontal {
+    border-radius: 3px;
+    background-color: #ff1a1a;
+}
+
+QSlider[spyderThemeId="temperature"]::handle:horizontal {
+    width: 13px;
+    height: 13px;
+    margin: -3px 0;
+    
+    border-radius: 6px;
+    background-color: #fe1a1a;
+}
+
+/* >>> SPYDERMUSIC SNOW-ICE TAB-GEOMETRIE (AUTO) >>> */
+/* Shape and default alignment only. Do not override colors. */
+QTabWidget::tab-bar {
+    alignment: center;
+}
+QTabBar::tab {
+    padding: 6px 14px;
+    margin: 4px 2px;
+    border: 0;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 32);
+}
+/* <<< SPYDERMUSIC SNOW-ICE TAB-GEOMETRIE (AUTO) <<< */
+
+QTabBar::tab:hover { background-color: rgba(255, 255, 255, 64); }
+
+QTabBar::tab:selected { background-color: rgba(255, 255, 255, 64); }
+
+QLabel#history_header {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+QFrame#vu_strip {
+    background-color: rgba(185, 220, 255, 32);
+}
+
+QPushButton#clear_queue_button { background-color: rgba(0, 0, 0, 50); }
+
+QPushButton[spyderThemeId="transport_previous"] { background-color: rgba(0, 0, 0, 75); }
+
+QPushButton[spyderThemeId="stop_after"] { background-color: rgba(0, 0, 0, 75); }
+
+QPushButton[spyderThemeId="transport_play_pause"] { background-color: rgba(0, 0, 0, 75); }
+
+QPushButton[spyderThemeId="transport_stop"] { background-color: rgba(0, 0, 0, 75); }
+
+QPushButton[spyderThemeId="transport_next"] { background-color: rgba(0, 0, 0, 75); }
+
+QPushButton[spyderThemeId="fade_stop"] { background-color: rgba(0, 0, 0, 75); }
+
+QPushButton[spyderThemeId="repeat_one"] { background-color: rgba(0, 0, 0, 75); }

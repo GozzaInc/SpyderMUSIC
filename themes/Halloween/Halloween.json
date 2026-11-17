@@ -1,0 +1,630 @@
+{
+  "api_version": 1,
+  "id": "Halloween",
+  "name": "Halloween",
+  "layout_mode": "absolute",
+  "panels": {
+    "cover": {
+      "bounds": [
+        328,
+        38,
+        334,
+        624
+      ],
+      "z_index": -65,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#aa0000",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "Cover",
+      "editor_inner_z": -78
+    },
+    "brain_log": {
+      "bounds": [
+        690,
+        575,
+        285,
+        318
+      ],
+      "z_index": -41,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffaa00",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "Panels",
+      "editor_inner_z": 20
+    },
+    "top_artists": {
+      "bounds": [
+        491,
+        0,
+        149,
+        379
+      ],
+      "visible": false,
+      "z_index": -25,
+      "editor_layer": "Panels",
+      "editor_inner_z": 22
+    },
+    "history": {
+      "bounds": [
+        690,
+        71,
+        285,
+        498
+      ],
+      "z_index": -57,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffaa00",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "Panels",
+      "editor_inner_z": 18
+    },
+    "main_log": {
+      "bounds": [
+        339,
+        0,
+        138,
+        379
+      ],
+      "visible": false,
+      "z_index": -33,
+      "editor_layer": "Panels",
+      "editor_inner_z": 21
+    },
+    "queue": {
+      "bounds": [
+        22,
+        575,
+        279,
+        318
+      ],
+      "z_index": -49,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffaa00",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "Panels",
+      "editor_inner_z": 19
+    }
+  },
+  "floating_components": {
+    "transport_previous": {
+      "bounds": [
+        87,
+        418,
+        30,
+        39
+      ],
+      "z_index": 25,
+      "editor_layer": "Controls",
+      "editor_inner_z": 0,
+      "visible": true
+    },
+    "transport_play_pause": {
+      "bounds": [
+        127,
+        418,
+        30,
+        40
+      ],
+      "z_index": 33,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 1
+    },
+    "transport_next": {
+      "bounds": [
+        205,
+        419,
+        30,
+        39
+      ],
+      "z_index": 41,
+      "editor_layer": "Controls",
+      "editor_inner_z": 2,
+      "visible": true
+    },
+    "clock": {
+      "bounds": [
+        31,
+        326,
+        260,
+        80
+      ],
+      "z_index": 16,
+      "editor_effect": {
+        "enabled": true,
+        "type": "shadow",
+        "color": "#000000",
+        "blur": 14,
+        "distance": 6,
+        "angle": 45,
+        "opacity": 65
+      },
+      "editor_layer": "Seekbars / Time",
+      "editor_inner_z": 68,
+      "visible": true
+    },
+    "artist_text": {
+      "bounds": [
+        237,
+        643,
+        520,
+        97
+      ],
+      "z_index": 90,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "shadow",
+        "color": "#000000",
+        "blur": 14,
+        "distance": 6,
+        "angle": 45,
+        "opacity": 65
+      },
+      "editor_layer": "Artist / Title",
+      "editor_inner_z": 79
+    },
+    "title_text": {
+      "bounds": [
+        237,
+        720,
+        520,
+        55
+      ],
+      "z_index": 82,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "shadow",
+        "color": "#000000",
+        "blur": 14,
+        "distance": 4,
+        "angle": 45,
+        "opacity": 65
+      },
+      "editor_layer": "Artist / Title",
+      "editor_inner_z": 78
+    },
+    "stop_after": {
+      "bounds": [
+        388,
+        848,
+        66,
+        45
+      ],
+      "z_index": 57,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 3
+    },
+    "fade_stop": {
+      "bounds": [
+        463,
+        848,
+        66,
+        45
+      ],
+      "z_index": 65,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 4
+    },
+    "repeat_one": {
+      "bounds": [
+        538,
+        848,
+        67,
+        45
+      ],
+      "z_index": 74,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 5
+    },
+    "tabs": {
+      "bounds": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "z_index": -81,
+      "visible": true,
+      "editor_layer": "UI Bars",
+      "editor_inner_z": 9
+    },
+    "search_panel": {
+      "bounds": [
+        22,
+        900,
+        953,
+        45
+      ],
+      "z_index": -82,
+      "visible": true,
+      "editor_layer": "Bars",
+      "editor_inner_z": 12,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffaa00",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      }
+    },
+    "quick_panel": {
+      "bounds": [
+        22,
+        949,
+        953,
+        45
+      ],
+      "z_index": -74,
+      "visible": true,
+      "editor_layer": "Bars",
+      "editor_inner_z": 13,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffaa00",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      }
+    },
+    "transport_stop": {
+      "bounds": [
+        166,
+        419,
+        30,
+        39
+      ],
+      "z_index": 49,
+      "editor_layer": "Controls",
+      "editor_inner_z": 2,
+      "visible": true
+    }
+  },
+  "cover_presentation": {
+    "mask": "rounded",
+    "radius": 9
+  },
+  "seek_presentation": {
+    "style": "circular",
+    "bounds": [
+      15,
+      63,
+      279,
+      663
+    ],
+    "z_index": -68,
+    "hide_linear": true,
+    "visible": true
+  },
+  "cover_animation": {
+    "type": "spin",
+    "rpm": 33.333,
+    "when": "playing"
+  },
+  "transitions": {
+    "duration_ms": 650,
+    "easing": "out_cubic",
+    "entries": {
+      "cover": {
+        "effect": "fade_slide",
+        "offset_x": -80
+      },
+      "brain_log": {
+        "effect": "fade",
+        "offset_x": 0
+      },
+      "history": {
+        "effect": "fade_slide",
+        "offset_y": -110
+      },
+      "queue": {
+        "effect": "slide",
+        "offset_x": 120
+      },
+      "clock": {
+        "effect": "fade_slide",
+        "offset_y": -80
+      },
+      "circular_seek": {
+        "effect": "fade"
+      }
+    }
+  },
+  "audio_reactive": {
+    "enabled": true,
+    "band": "bass",
+    "intensity": 180,
+    "color": "#ffffff",
+    "gradient": {
+      "direction": "vertical",
+      "start": "top",
+      "start_1": "top",
+      "color_1": "85, 0, 0, 0.000",
+      "percent_1": 15,
+      "color_2": "85, 0, 0, 0.150",
+      "percent_2": 30,
+      "color_3": "85, 0, 0, 0.300",
+      "percent_3": 45,
+      "color_4": "85, 0, 0, 0.450",
+      "percent_4": 60,
+      "color_5": "85, 0, 0, 0.600",
+      "percent_5": 75,
+      "color_6": "32, 32, 48, 0.750",
+      "percent_6": 90
+    }
+  },
+  "audio_bindings": [
+    {
+      "target": "cover",
+      "effect": "outline",
+      "band": "highs",
+      "width": 6,
+      "strength": 255,
+      "color": "#ff5500",
+      "radius": 10,
+      "padding": 0,
+      "gradient": {
+        "direction": "vertical",
+        "start": "top",
+        "start_1": "top",
+        "color_1": "255, 0, 0, 1.000",
+        "percent_1": 50,
+        "color_2": "85, 0, 0, 0.000",
+        "percent_2": 100
+      }
+    }
+  ],
+  "color_gradients": [
+    {
+      "direction": "vertical",
+      "start": "bottom",
+      "start_1": "bottom",
+      "color_1": "0, 0, 0, 0.000",
+      "percent_1": 0,
+      "color_2": "0, 0, 0, 0.000",
+      "percent_2": 100
+    }
+  ],
+  "visualizations": [
+    {
+      "type": "spectrum",
+      "bounds": [
+        0,
+        127,
+        1000,
+        774
+      ],
+      "bars": 128,
+      "color": "#202030",
+      "z_index": -90,
+      "opacity": 0.251,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#55007f",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "Background FFT",
+      "editor_inner_z": -90
+    },
+    {
+      "type": "waveform",
+      "bounds": [
+        328,
+        491,
+        334,
+        172
+      ],
+      "color": "#d3ffbf",
+      "z_index": -16,
+      "opacity": 1.0,
+      "gain": 0.75,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#427f25",
+        "blur": 35,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "Oscilloscope",
+      "editor_inner_z": -54
+    },
+    {
+      "type": "image",
+      "asset": "assets/pumpkin_677bad582c1a.png",
+      "bounds": [
+        119,
+        155,
+        86,
+        152
+      ],
+      "z_index": -8,
+      "visible": true,
+      "rotation": 0,
+      "flip_horizontal": false,
+      "flip_vertical": false,
+      "editor_layer": "Oscilloscope",
+      "editor_inner_z": -53,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffaa00",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "button_action": "transport_play_pause"
+    }
+  ],
+  "editor_background": {
+    "mode": "album"
+  },
+  "editor_text_colors": {
+    "clock": "#ffaa5500",
+    "artist_text": "#ffaa5500",
+    "title_text": "#ffaa5500"
+  },
+  "components": {
+    "artist_text": {
+      "visible": true
+    },
+    "title_text": {
+      "visible": true
+    }
+  },
+  "editor_fonts": {
+    "artist_text": {
+      "family": "Arial",
+      "size": 36,
+      "bold": true
+    },
+    "clock": {
+      "family": "Consolas",
+      "size": 36,
+      "bold": true
+    },
+    "title_text": {
+      "family": "Arial",
+      "size": 18,
+      "bold": true
+    }
+  },
+  "seekbars": [
+    {
+      "style": "circular",
+      "bounds": [
+        22,
+        43,
+        279,
+        522
+      ],
+      "z_index": 8,
+      "hide_linear": true,
+      "visible": true,
+      "played_color": "#550000",
+      "remaining_color": "#646464",
+      "cursor_color": "#ffffff",
+      "editor_layer": "Seekbars / Time",
+      "editor_inner_z": 67
+    },
+    {
+      "style": "waveform",
+      "bounds": [
+        309,
+        765,
+        376,
+        75
+      ],
+      "z_index": 0,
+      "visible": true,
+      "hide_linear": true,
+      "played_color": "#84ff4b",
+      "remaining_color": "#2a4020",
+      "cursor_color": "#ffb866",
+      "editor_layer": "Seekbars / Time",
+      "editor_inner_z": 66,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffb866",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      }
+    }
+  ],
+  "reference_canvas": {
+    "width": 1920,
+    "height": 1027
+  },
+  "editor_layers": {
+    "panels:main_log": {
+      "locked": true
+    },
+    "panels:top_artists": {
+      "locked": true
+    },
+    "visualizations:1": {
+      "locked": false
+    }
+  },
+  "editor_layer_groups": {
+    "Controls": {
+      "locked": true
+    },
+    "Panels": {
+      "locked": true
+    },
+    "Artist / Title": {
+      "locked": true
+    },
+    "Seekbars / Time": {
+      "locked": true
+    },
+    "Cover": {
+      "locked": true
+    },
+    "Background FFT": {
+      "locked": true
+    },
+    "Oscilloscope": {
+      "locked": true
+    },
+    "Bars": {
+      "locked": true
+    }
+  },
+  "editor_layer_order": [
+    "Background FFT",
+    "Bars",
+    "Cover",
+    "Panels",
+    "Oscilloscope",
+    "Seekbars / Time",
+    "Controls",
+    "Artist / Title"
+  ],
+  "full_canvas": true
+}

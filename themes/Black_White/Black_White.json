@@ -1,0 +1,648 @@
+{
+  "api_version": 1,
+  "id": "Black_White",
+  "name": "Black_White",
+  "layout_mode": "absolute",
+  "panels": {
+    "cover": {
+      "bounds": [
+        25,
+        18,
+        276,
+        516
+      ],
+      "z_index": 0,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#000000",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "panels / cover",
+      "editor_inner_z": 0
+    },
+    "brain_log": {
+      "bounds": [
+        690,
+        499,
+        285,
+        318
+      ],
+      "z_index": 27,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffffff",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "panels / brain_log",
+      "editor_inner_z": 51
+    },
+    "top_artists": {
+      "bounds": [
+        314,
+        264,
+        177,
+        615
+      ],
+      "visible": true,
+      "z_index": 45,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffffff",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "panels / top_artists",
+      "editor_inner_z": 77
+    },
+    "history": {
+      "bounds": [
+        500,
+        264,
+        177,
+        616
+      ],
+      "z_index": 36,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffffff",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "panels / history",
+      "editor_inner_z": 64
+    },
+    "main_log": {
+      "bounds": [
+        690,
+        18,
+        285,
+        461
+      ],
+      "visible": true,
+      "z_index": 18,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffffff",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "panels / main_log",
+      "editor_inner_z": 39
+    },
+    "queue": {
+      "bounds": [
+        22,
+        642,
+        279,
+        237
+      ],
+      "z_index": 54,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffffff",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "panels / queue",
+      "editor_inner_z": 90
+    }
+  },
+  "floating_components": {
+    "transport_previous": {
+      "bounds": [
+        55,
+        551,
+        45,
+        62
+      ],
+      "z_index": -36,
+      "editor_layer": "floating_components / transport_previous",
+      "editor_inner_z": -39
+    },
+    "transport_play_pause": {
+      "bounds": [
+        112,
+        551,
+        45,
+        62
+      ],
+      "z_index": -27,
+      "editor_layer": "floating_components / transport_play_pause",
+      "editor_inner_z": -26
+    },
+    "transport_next": {
+      "bounds": [
+        225,
+        551,
+        45,
+        62
+      ],
+      "z_index": -18,
+      "editor_layer": "floating_components / transport_next",
+      "editor_inner_z": -13
+    },
+    "clock": {
+      "bounds": [
+        370,
+        101,
+        260,
+        80
+      ],
+      "z_index": 9,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#000000",
+        "blur": 14,
+        "distance": 6,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "floating_components / clock",
+      "editor_inner_z": 13
+    },
+    "artist_text": {
+      "bounds": [
+        233,
+        149,
+        520,
+        97
+      ],
+      "z_index": -63,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#000000",
+        "blur": 14,
+        "distance": 6,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "floating_components / artist_text",
+      "editor_inner_z": -77
+    },
+    "title_text": {
+      "bounds": [
+        233,
+        212,
+        520,
+        55
+      ],
+      "z_index": -72,
+      "visible": true,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#000000",
+        "blur": 14,
+        "distance": 4,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "floating_components / title_text",
+      "editor_inner_z": -90
+    },
+    "tabs": {
+      "bounds": [
+        220,
+        0,
+        560,
+        36
+      ],
+      "z_index": 95,
+      "visible": true,
+      "editor_layer": "UI Bars",
+      "editor_inner_z": 6
+    },
+    "search_panel": {
+      "bounds": [
+        0,
+        900,
+        1000,
+        45
+      ],
+      "z_index": -90,
+      "visible": true,
+      "editor_layer": "UI Bars",
+      "editor_inner_z": 7
+    },
+    "quick_panel": {
+      "bounds": [
+        0,
+        950,
+        1000,
+        45
+      ],
+      "z_index": -81,
+      "visible": true,
+      "editor_layer": "UI Bars",
+      "editor_inner_z": 8
+    },
+    "stop_after": {
+      "bounds": [
+        690,
+        835,
+        68,
+        45
+      ],
+      "z_index": 72,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 9
+    },
+    "fade_stop": {
+      "bounds": [
+        800,
+        835,
+        68,
+        45
+      ],
+      "z_index": 81,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 10
+    },
+    "repeat_one": {
+      "bounds": [
+        907,
+        835,
+        68,
+        45
+      ],
+      "z_index": 90,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 11
+    },
+    "transport_stop": {
+      "bounds": [
+        168,
+        551,
+        45,
+        62
+      ],
+      "z_index": -9,
+      "editor_layer": "floating_components / transport_next",
+      "editor_inner_z": -13,
+      "visible": true
+    }
+  },
+  "cover_presentation": {
+    "mask": "rounded",
+    "radius": 9
+  },
+  "seek_presentation": {
+    "style": "circular",
+    "bounds": [
+      15,
+      63,
+      279,
+      663
+    ],
+    "z_index": -68,
+    "hide_linear": true,
+    "visible": true
+  },
+  "cover_animation": {
+    "type": "spin",
+    "rpm": 33.333,
+    "when": "playing"
+  },
+  "transitions": {
+    "duration_ms": 650,
+    "easing": "out_cubic",
+    "entries": {
+      "cover": {
+        "effect": "fade_slide",
+        "offset_x": -80
+      },
+      "brain_log": {
+        "effect": "fade",
+        "offset_x": 0
+      },
+      "history": {
+        "effect": "fade_slide",
+        "offset_y": -110
+      },
+      "queue": {
+        "effect": "slide",
+        "offset_x": 120
+      },
+      "clock": {
+        "effect": "fade_slide",
+        "offset_y": -80
+      },
+      "circular_seek": {
+        "effect": "fade"
+      }
+    }
+  },
+  "audio_reactive": {
+    "enabled": true,
+    "band": "bass",
+    "intensity": 180,
+    "color": "#ffffff",
+    "gradient": {
+      "direction": "vertical",
+      "start": "top",
+      "start_1": "top",
+      "color_1": "255, 255, 255, 0.000",
+      "percent_1": 15,
+      "color_2": "255, 255, 255, 0.150",
+      "percent_2": 30,
+      "color_3": "255, 255, 255, 0.300",
+      "percent_3": 45,
+      "color_4": "255, 255, 255, 0.450",
+      "percent_4": 60,
+      "color_5": "255, 255, 255, 0.600",
+      "percent_5": 75,
+      "color_6": "255, 255, 255, 0.750",
+      "percent_6": 90
+    }
+  },
+  "audio_bindings": [
+    {
+      "target": "brain_log",
+      "effect": "outline",
+      "band": "highs",
+      "width": 3,
+      "strength": 155,
+      "color": "#ff0000",
+      "radius": 10,
+      "padding": 0,
+      "gradient": {
+        "direction": "vertical",
+        "start": "bottom",
+        "start_1": "bottom",
+        "color_1": "100, 100, 100, 1.000",
+        "percent_1": 0,
+        "color_2": "255, 255, 255, 0.100",
+        "percent_2": 100
+      }
+    },
+    {
+      "target": "queue",
+      "effect": "outline",
+      "band": "highs",
+      "width": 2,
+      "strength": 140,
+      "color": "#ff175b",
+      "radius": 10,
+      "padding": 0,
+      "gradient": {
+        "direction": "vertical",
+        "start": "bottom",
+        "start_1": "bottom",
+        "color_1": "255, 255, 255, 1.000",
+        "percent_1": 0,
+        "color_2": "100, 100, 100, 0.100",
+        "percent_2": 100
+      }
+    },
+    {
+      "target": "cover",
+      "effect": "outline",
+      "band": "highs",
+      "width": 6,
+      "strength": 255,
+      "color": "#ff5500",
+      "radius": 10,
+      "padding": 0,
+      "gradient": {
+        "direction": "vertical",
+        "start": "top",
+        "start_1": "top",
+        "color_1": "255, 255, 255, 1.000",
+        "percent_1": 50,
+        "color_2": "100, 100, 100, 0.000",
+        "percent_2": 100
+      }
+    }
+  ],
+  "color_gradients": [
+    {
+      "direction": "vertical",
+      "start": "bottom",
+      "start_1": "bottom",
+      "color_1": "0, 0, 0, 0.000",
+      "percent_1": 0,
+      "color_2": "0, 0, 0, 0.000",
+      "percent_2": 100
+    }
+  ],
+  "visualizations": [
+    {
+      "type": "spectrum",
+      "bounds": [
+        0,
+        0,
+        1000,
+        899
+      ],
+      "bars": 128,
+      "color": "#ffffff",
+      "z_index": -45,
+      "opacity": 0.251,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffffff",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "visible": true,
+      "editor_layer": "visualizations / 0",
+      "editor_inner_z": -51
+    },
+    {
+      "type": "waveform",
+      "bounds": [
+        301,
+        56,
+        389,
+        173
+      ],
+      "color": "#ffffff",
+      "z_index": -54,
+      "opacity": 1.0,
+      "gain": 0.75,
+      "editor_effect": {
+        "enabled": true,
+        "type": "glow",
+        "color": "#ffffff",
+        "blur": 24,
+        "distance": 12,
+        "angle": 45,
+        "opacity": 100
+      },
+      "editor_layer": "visualizations / 1",
+      "editor_inner_z": -64
+    }
+  ],
+  "editor_background": {
+    "mode": "color",
+    "color": "#000000"
+  },
+  "editor_text_colors": {
+    "clock": "#ffffffff",
+    "artist_text": "#ffffffff",
+    "title_text": "#ffffffff"
+  },
+  "components": {
+    "artist_text": {
+      "visible": true
+    },
+    "title_text": {
+      "visible": true
+    }
+  },
+  "editor_fonts": {
+    "artist_text": {
+      "family": "Arial",
+      "size": 36,
+      "bold": true
+    },
+    "clock": {
+      "family": "Consolas",
+      "size": 36,
+      "bold": true
+    },
+    "title_text": {
+      "family": "Arial",
+      "size": 18,
+      "bold": true
+    },
+    "history": {
+      "family": "Fixedsys",
+      "size": 11,
+      "bold": true
+    },
+    "top_artists": {
+      "family": "Fixedsys",
+      "size": 11,
+      "bold": true
+    }
+  },
+  "seekbars": [
+    {
+      "style": "waveform",
+      "bounds": [
+        314,
+        36,
+        364,
+        50
+      ],
+      "z_index": 63,
+      "visible": true,
+      "hide_linear": true,
+      "played_color": "#ffffff",
+      "remaining_color": "#646464",
+      "cursor_color": "#ffffff",
+      "editor_layer": "seekbars / 0",
+      "editor_inner_z": 26
+    }
+  ],
+  "reference_canvas": {
+    "width": 1920,
+    "height": 1027
+  },
+  "full_canvas": true,
+  "editor_layer_groups": {
+    "Controls": {
+      "locked": false
+    },
+    "UI Bars": {
+      "locked": false
+    },
+    "floating_components / title_text": {
+      "locked": false
+    },
+    "floating_components / artist_text": {
+      "locked": false
+    },
+    "visualizations / 1": {
+      "locked": true
+    },
+    "visualizations / 0": {
+      "locked": true
+    },
+    "floating_components / transport_previous": {
+      "locked": false
+    },
+    "floating_components / transport_play_pause": {
+      "locked": false
+    },
+    "floating_components / transport_next": {
+      "locked": false
+    },
+    "panels / cover": {
+      "locked": false
+    },
+    "floating_components / clock": {
+      "locked": false
+    },
+    "seekbars / 0": {
+      "locked": false
+    },
+    "panels / main_log": {
+      "locked": false
+    },
+    "panels / brain_log": {
+      "locked": false
+    },
+    "panels / history": {
+      "locked": false
+    },
+    "panels / top_artists": {
+      "locked": false
+    },
+    "panels / queue": {
+      "locked": false
+    }
+  },
+  "editor_layer_order": [
+    "UI Bars",
+    "floating_components / title_text",
+    "floating_components / artist_text",
+    "visualizations / 1",
+    "visualizations / 0",
+    "floating_components / transport_previous",
+    "floating_components / transport_play_pause",
+    "floating_components / transport_next",
+    "panels / cover",
+    "floating_components / clock",
+    "panels / main_log",
+    "panels / brain_log",
+    "panels / history",
+    "panels / top_artists",
+    "panels / queue",
+    "seekbars / 0",
+    "Controls"
+  ]
+}

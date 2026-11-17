@@ -1,0 +1,397 @@
+{
+  "api_version": 1,
+  "layout_mode": "absolute",
+  "panels": {
+    "cover": {
+      "bounds": [
+        8,
+        45,
+        142,
+        207
+      ],
+      "visible": false,
+      "editor_layer": "Panels",
+      "editor_inner_z": 0,
+      "z_index": -74
+    },
+    "brain_log": {
+      "bounds": [
+        246,
+        45,
+        412,
+        432
+      ],
+      "visible": false,
+      "editor_layer": "Panels",
+      "editor_inner_z": 1,
+      "z_index": -65
+    },
+    "top_artists": {
+      "bounds": [
+        662,
+        45,
+        169,
+        746
+      ],
+      "visible": false,
+      "editor_layer": "Panels",
+      "editor_inner_z": 2,
+      "z_index": -57
+    },
+    "history": {
+      "bounds": [
+        836,
+        45,
+        157,
+        432
+      ],
+      "visible": false,
+      "editor_layer": "Panels",
+      "editor_inner_z": 3,
+      "z_index": -49
+    },
+    "main_log": {
+      "bounds": [
+        84,
+        489,
+        574,
+        276
+      ],
+      "visible": false,
+      "editor_layer": "Panels",
+      "editor_inner_z": 4,
+      "z_index": -41
+    },
+    "queue": {
+      "bounds": [
+        836,
+        489,
+        157,
+        302
+      ],
+      "visible": false,
+      "editor_layer": "Panels",
+      "editor_inner_z": 5,
+      "z_index": -33
+    },
+    "playlist": {
+      "bounds": [
+        47,
+        73,
+        909,
+        852
+      ],
+      "z_index": -25,
+      "visible": true,
+      "editor_layer": "Panels",
+      "editor_inner_z": 6
+    }
+  },
+  "floating_components": {
+    "search_panel": {
+      "bounds": [
+        8,
+        893,
+        985,
+        51
+      ],
+      "z_index": -82,
+      "visible": false,
+      "editor_layer": "Bars",
+      "editor_inner_z": 15
+    },
+    "quick_panel": {
+      "bounds": [
+        8,
+        949,
+        985,
+        51
+      ],
+      "z_index": -90,
+      "visible": false,
+      "editor_layer": "Bars",
+      "editor_inner_z": 14
+    },
+    "transport_previous": {
+      "bounds": [
+        47,
+        942,
+        32,
+        42
+      ],
+      "z_index": -16,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 0
+    },
+    "transport_play_pause": {
+      "bounds": [
+        86,
+        942,
+        30,
+        42
+      ],
+      "z_index": -8,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 1
+    },
+    "transport_next": {
+      "bounds": [
+        163,
+        942,
+        31,
+        42
+      ],
+      "z_index": 0,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 2
+    },
+    "clock": {
+      "bounds": [
+        335,
+        899,
+        330,
+        101
+      ],
+      "z_index": 16,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 4
+    },
+    "stop_after": {
+      "bounds": [
+        767,
+        938,
+        74,
+        45
+      ],
+      "z_index": 25,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 5,
+      "editor_effect": {}
+    },
+    "fade_stop": {
+      "bounds": [
+        844,
+        938,
+        73,
+        45
+      ],
+      "z_index": 33,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 6
+    },
+    "repeat_one": {
+      "bounds": [
+        920,
+        938,
+        73,
+        45
+      ],
+      "z_index": 41,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 7
+    },
+    "tabs": {
+      "bounds": [
+        0,
+        0,
+        1000,
+        886
+      ],
+      "z_index": -90,
+      "visible": true,
+      "editor_layer": "UI Bars",
+      "editor_inner_z": 9
+    },
+    "vu_left": {
+      "bounds": [
+        84,
+        759,
+        291,
+        31
+      ],
+      "visible": false,
+      "z_index": 65,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 0
+    },
+    "vu_right": {
+      "bounds": [
+        375,
+        759,
+        283,
+        31
+      ],
+      "visible": false,
+      "z_index": 74,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 1
+    },
+    "artist_title_text": {
+      "bounds": [
+        240,
+        18,
+        520,
+        55
+      ],
+      "z_index": 49,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 8
+    },
+    "transport_stop": {
+      "bounds": [
+        124,
+        942,
+        31,
+        43
+      ],
+      "z_index": 8,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 3
+    }
+  },
+  "seekbars": [
+    {
+      "style": "linear",
+      "bounds": [
+        47,
+        47,
+        909,
+        25
+      ],
+      "z_index": 57,
+      "visible": true,
+      "hide_linear": true,
+      "played_color": "#6687ff",
+      "remaining_color": "#303036",
+      "cursor_color": "#6687ff",
+      "editor_layer": "Controls",
+      "editor_inner_z": 9
+    }
+  ],
+  "editor_layer_groups": {
+    "Panels": {
+      "locked": true
+    },
+    "Controls": {
+      "locked": true
+    },
+    "Bars": {
+      "locked": false
+    },
+    "VU-Meter": {
+      "locked": false
+    },
+    "EM-84": {
+      "locked": false
+    }
+  },
+  "editor_layer_order": [
+    "Bars",
+    "Panels",
+    "Controls",
+    "VU-Meter",
+    "EM-84"
+  ],
+  "id": "C64_Offline",
+  "name": "C64_Offline",
+  "reference_canvas": {
+    "width": 1298,
+    "height": 888
+  },
+  "audio_reactive": {
+    "enabled": false
+  },
+  "editor_background": {
+    "mode": "color",
+    "color": "#d9d9ff"
+  },
+  "editor_fonts": {
+    "clock": {
+      "family": "Fixedsys",
+      "size": 24,
+      "bold": false
+    },
+    "artist_title_text": {
+      "family": "Fixedsys",
+      "size": 24,
+      "bold": false
+    }
+  },
+  "full_canvas": true,
+  "components": {
+    "vu_left": {
+      "vu_presentation": "classic"
+    },
+    "vu_right": {
+      "vu_presentation": "classic"
+    },
+    "artist_title_text": {
+      "visible": true
+    }
+  },
+  "audio_bindings": [],
+  "visualizations": [
+    {
+      "type": "vu",
+      "bounds": [
+        35,
+        548,
+        15,
+        83
+      ],
+      "color": "#ff175b",
+      "z_index": 82,
+      "source": "A+B",
+      "vu_rotation": 90,
+      "vu_flip_horizontal": false,
+      "vu_flip_vertical": false,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 2,
+      "gain": 0.1,
+      "vu_presentation": "phosphor_mono",
+      "vu_sensitivity": 97,
+      "vu_segments": 5,
+      "vu_phosphor_color": "#40ffb0",
+      "vu_band": "full",
+      "vu_curve": 5.0,
+      "visible": false
+    },
+    {
+      "type": "vu",
+      "bounds": [
+        35,
+        632,
+        15,
+        85
+      ],
+      "color": "#ff175b",
+      "z_index": 90,
+      "source": "A+B",
+      "vu_rotation": 270,
+      "vu_flip_horizontal": false,
+      "vu_flip_vertical": true,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 3,
+      "vu_presentation": "phosphor_mono",
+      "vu_sensitivity": 97,
+      "vu_segments": 5,
+      "vu_phosphor_color": "#40ffb0",
+      "vu_band": "full",
+      "vu_curve": 5.0,
+      "visible": false
+    }
+  ],
+  "editor_text_colors": {
+    "clock": "#ff6687ff",
+    "artist_title_text": "#ff6687ff"
+  }
+}

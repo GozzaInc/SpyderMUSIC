@@ -1,0 +1,384 @@
+{
+  "api_version": 1,
+  "layout_mode": "absolute",
+  "panels": {
+    "cover": {
+      "bounds": [
+        8,
+        45,
+        231,
+        432
+      ],
+      "visible": true,
+      "editor_layer": "Panels",
+      "editor_inner_z": 0,
+      "z_index": -73
+    },
+    "brain_log": {
+      "bounds": [
+        246,
+        45,
+        412,
+        432
+      ],
+      "visible": true,
+      "editor_layer": "Panels",
+      "editor_inner_z": 1,
+      "z_index": -64
+    },
+    "top_artists": {
+      "bounds": [
+        662,
+        45,
+        169,
+        746
+      ],
+      "visible": true,
+      "editor_layer": "Panels",
+      "editor_inner_z": 2,
+      "z_index": -56
+    },
+    "history": {
+      "bounds": [
+        836,
+        45,
+        157,
+        432
+      ],
+      "visible": true,
+      "editor_layer": "Panels",
+      "editor_inner_z": 3,
+      "z_index": -47
+    },
+    "main_log": {
+      "bounds": [
+        84,
+        489,
+        574,
+        276
+      ],
+      "visible": true,
+      "editor_layer": "Panels",
+      "editor_inner_z": 4,
+      "z_index": -39
+    },
+    "queue": {
+      "bounds": [
+        836,
+        489,
+        157,
+        302
+      ],
+      "visible": true,
+      "editor_layer": "Panels",
+      "editor_inner_z": 5,
+      "z_index": -30
+    }
+  },
+  "floating_components": {
+    "search_panel": {
+      "bounds": [
+        8,
+        889,
+        985,
+        51
+      ],
+      "z_index": -81,
+      "visible": true,
+      "editor_layer": "Bars",
+      "editor_inner_z": 15
+    },
+    "quick_panel": {
+      "bounds": [
+        8,
+        945,
+        985,
+        51
+      ],
+      "z_index": -90,
+      "visible": true,
+      "editor_layer": "Bars",
+      "editor_inner_z": 14
+    },
+    "transport_previous": {
+      "bounds": [
+        8,
+        840,
+        32,
+        42
+      ],
+      "z_index": -21,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 0
+    },
+    "transport_play_pause": {
+      "bounds": [
+        47,
+        840,
+        30,
+        42
+      ],
+      "z_index": -13,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 1
+    },
+    "transport_next": {
+      "bounds": [
+        124,
+        840,
+        32,
+        42
+      ],
+      "z_index": -4,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 2
+    },
+    "clock": {
+      "bounds": [
+        335,
+        804,
+        226,
+        100
+      ],
+      "z_index": 13,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 4
+    },
+    "stop_after": {
+      "bounds": [
+        767,
+        838,
+        74,
+        45
+      ],
+      "z_index": 30,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 8,
+      "editor_effect": {}
+    },
+    "fade_stop": {
+      "bounds": [
+        844,
+        838,
+        73,
+        45
+      ],
+      "z_index": 39,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 9
+    },
+    "repeat_one": {
+      "bounds": [
+        920,
+        838,
+        73,
+        45
+      ],
+      "z_index": 47,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 10
+    },
+    "tabs": {
+      "bounds": [
+        0,
+        0,
+        1000,
+        886
+      ],
+      "z_index": -90,
+      "visible": true,
+      "editor_layer": "UI Bars",
+      "editor_inner_z": 9
+    },
+    "vu_left": {
+      "bounds": [
+        84,
+        759,
+        291,
+        31
+      ],
+      "visible": true,
+      "z_index": 56,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 0
+    },
+    "vu_right": {
+      "bounds": [
+        375,
+        759,
+        283,
+        31
+      ],
+      "visible": true,
+      "z_index": 64,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 1
+    },
+    "transport_stop": {
+      "bounds": [
+        85,
+        840,
+        32,
+        42
+      ],
+      "z_index": 4,
+      "visible": true,
+      "editor_layer": "Controls",
+      "editor_inner_z": 2
+    }
+  },
+  "seekbars": [
+    {
+      "style": "linear",
+      "bounds": [
+        8,
+        798,
+        985,
+        26
+      ],
+      "z_index": 21,
+      "visible": true,
+      "hide_linear": true,
+      "played_color": "#ff1a1a",
+      "remaining_color": "#303036",
+      "cursor_color": "#ff1a1a",
+      "editor_layer": "Controls",
+      "editor_inner_z": 7
+    }
+  ],
+  "editor_layer_groups": {
+    "Panels": {
+      "locked": true
+    },
+    "Controls": {
+      "locked": true
+    },
+    "Bars": {
+      "locked": true
+    },
+    "VU-Meter": {
+      "locked": true
+    },
+    "EM-84": {
+      "locked": true
+    }
+  },
+  "editor_layer_order": [
+    "Bars",
+    "Panels",
+    "Controls",
+    "VU-Meter",
+    "EM-84"
+  ],
+  "id": "Mad_Scientist_Glass",
+  "name": "Mad_Scientist_Glass",
+  "reference_canvas": {
+    "width": 1920,
+    "height": 1027
+  },
+  "audio_reactive": {
+    "enabled": false
+  },
+  "editor_background": {
+    "mode": "album"
+  },
+  "editor_fonts": {
+    "clock": {
+      "family": "Consolas",
+      "size": 36,
+      "bold": true
+    }
+  },
+  "full_canvas": true,
+  "components": {
+    "vu_left": {
+      "vu_presentation": "classic"
+    },
+    "vu_right": {
+      "vu_presentation": "classic"
+    }
+  },
+  "audio_bindings": [],
+  "visualizations": [
+    {
+      "type": "vu",
+      "bounds": [
+        35,
+        548,
+        15,
+        83
+      ],
+      "color": "#ff175b",
+      "z_index": 73,
+      "source": "A+B",
+      "vu_rotation": 90,
+      "vu_flip_horizontal": false,
+      "vu_flip_vertical": false,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 2,
+      "gain": 0.1,
+      "vu_presentation": "phosphor_mono",
+      "vu_sensitivity": 97,
+      "vu_segments": 5,
+      "vu_phosphor_color": "#40ffb0",
+      "vu_band": "full",
+      "vu_curve": 5.0
+    },
+    {
+      "type": "vu",
+      "bounds": [
+        35,
+        632,
+        15,
+        85
+      ],
+      "color": "#ff175b",
+      "z_index": 81,
+      "source": "A+B",
+      "vu_rotation": 270,
+      "vu_flip_horizontal": false,
+      "vu_flip_vertical": true,
+      "editor_layer": "VU-Meter",
+      "editor_inner_z": 3,
+      "vu_presentation": "phosphor_mono",
+      "vu_sensitivity": 97,
+      "vu_segments": 5,
+      "vu_phosphor_color": "#40ffb0",
+      "vu_band": "full",
+      "vu_curve": 5.0
+    },
+    {
+      "type": "image",
+      "asset": "assets/EM84_fe2d1050.png",
+      "bounds": [
+        8,
+        489,
+        69,
+        302
+      ],
+      "z_index": 90,
+      "visible": true,
+      "rotation": 0,
+      "flip_horizontal": false,
+      "flip_vertical": false,
+      "editor_layer": "EM-84",
+      "editor_inner_z": 5
+    }
+  ],
+  "editor_text_colors": {
+    "clock": "#ffcccccc"
+  },
+  "panel_titles": {
+    "top": {
+      "text": "Top 100",
+      "visible": true
+    }
+  }
+}
