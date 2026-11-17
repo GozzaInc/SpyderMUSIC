@@ -79,6 +79,17 @@ py -3.13 -m venv .venv
 
 The commands assume that `requirements.txt` and `SpyderMUSIC.py` are present in the repository root. Consult the source and configuration for any additional optional services.
 
+### Getting started: Your first music
+
+Auto DJ needs an initial musical starting point before Scout can discover related music and Judge can build on your preferences. You can provide one in either of these ways:
+
+1. **AI Training:** Import a YouTube Music playlist, select tracks you like, and assign a genre. This seeds Scout with an initial preference base for music discovery.
+2. **Queue:** Add a song to the playback queue to start listening. You can also use a queued song as the reference for targeted Scout discovery.
+
+You do not need to build an entire music library manually. Once Scout has suitable starting information, it can discover more music, and Judge can use your listening feedback to refine future selections.
+
+If you only want to play your own audio files, switch to **Local Player** and import files or playlists instead. Scout discovery is not required for local playback.
+
 ## Building Windows executables (optional)
 
 The project provides one **PyInstaller spec configuration** for building your own Windows executable:
