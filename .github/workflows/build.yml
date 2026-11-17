@@ -17,16 +17,8 @@ permissions:
 
 jobs:
   build:
-    name: Windows ${{ matrix.variant }}
+    name: Windows OneDir
     runs-on: windows-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - variant: OneDir
-            spec: SpyderMUSIC_OneDir.spec
-          - variant: OneFile
-            spec: SpyderMUSIC_OneFile.spec
 
     steps:
       - name: Check out source
@@ -48,16 +40,15 @@ jobs:
       - name: Check required build inputs
         shell: pwsh
         run: |
-          @('libmpv_windows-x86_64.dll', 'data/icon.ico', '${{ matrix.spec }}') | ForEach-Object {
+          @('libmpv_windows-x86_64.dll', 'data/icon.ico', 'SpyderMUSIC_OneDir.spec') | ForEach-Object {
             if (-not (Test-Path -LiteralPath $_)) { throw "Missing required file: $_" }
           }
 
-      - name: Build ${{ matrix.variant }}
+      - name: Build OneDir
         shell: pwsh
-        run: python -m PyInstaller --clean --noconfirm '${{ matrix.spec }}'
+        run: python -m PyInstaller --clean --noconfirm 'SpyderMUSIC_OneDir.spec'
 
-      - name: Move OneDir themes next to EXE
-        if: matrix.variant == 'OneDir'
+      - name: Move themes next to EXE
         shell: pwsh
         run: |
           $source = 'dist/SpyderMUSIC/runtime/themes'
@@ -85,12 +76,12 @@ jobs:
           New-Item -ItemType Directory -Force -Path release | Out-Null
           $outputs = @(Get-ChildItem -LiteralPath dist -Force)
           if ($outputs.Count -eq 0) { throw 'PyInstaller produced no dist output.' }
-          Compress-Archive -Path 'dist/*' -DestinationPath 'release/SpyderMUSIC-Windows-${{ matrix.variant }}.zip' -Force
+          Compress-Archive -Path 'dist/*' -DestinationPath 'release/SpyderMUSIC-Windows-OneDir.zip' -Force
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: SpyderMUSIC-Windows-${{ matrix.variant }}
-          path: release/SpyderMUSIC-Windows-${{ matrix.variant }}.zip
+          name: SpyderMUSIC-Windows-OneDir
+          path: release/SpyderMUSIC-Windows-OneDir.zip
           if-no-files-found: error
           retention-days: 14
