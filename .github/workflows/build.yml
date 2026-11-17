@@ -1,0 +1,72 @@
+name: Build SpyderMUSIC for Windows
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**/*.py'
+      - '**/*.spec'
+      - 'requirements.txt'
+      - 'data/**'
+      - 'themes/**'
+      - '.github/workflows/build.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Windows ${{ matrix.variant }}
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - variant: OneDir
+            spec: SpyderMUSIC_OneDir.spec
+          - variant: OneFile
+            spec: SpyderMUSIC_OneFile.spec
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+          cache: pip
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install pyinstaller
+
+      - name: Check required build inputs
+        shell: pwsh
+        run: |
+          @('libmpv_windows-x86_64.dll', 'data/icon.ico', '${{ matrix.spec }}') | ForEach-Object {
+            if (-not (Test-Path -LiteralPath $_)) { throw "Missing required file: $_" }
+          }
+
+      - name: Build ${{ matrix.variant }}
+        shell: pwsh
+        run: python -m PyInstaller --clean --noconfirm '${{ matrix.spec }}'
+
+      - name: Package build output
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path release | Out-Null
+          $outputs = @(Get-ChildItem -LiteralPath dist -Force)
+          if ($outputs.Count -eq 0) { throw 'PyInstaller produced no dist output.' }
+          Compress-Archive -Path 'dist/*' -DestinationPath 'release/SpyderMUSIC-Windows-${{ matrix.variant }}.zip' -Force
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SpyderMUSIC-Windows-${{ matrix.variant }}
+          path: release/SpyderMUSIC-Windows-${{ matrix.variant }}.zip
+          if-no-files-found: error
+          retention-days: 14
