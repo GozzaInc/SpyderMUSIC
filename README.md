@@ -61,7 +61,7 @@ The commands assume that `requirements.txt` and `SpyderMUSIC.py` are present in 
 
 ## Building Windows executables (optional)
 
-The project provides two **PyInstaller spec configurations** for building your own Windows executable:
+The project provides one **PyInstaller spec configuration** for building your own Windows executable:
 
 - **OneDir:** produces an application directory containing the executable and its bundled runtime files.
 
