@@ -1,3 +1,4 @@
+
 name: Build SpyderMUSIC for Windows
 
 on:
@@ -54,6 +55,29 @@ jobs:
       - name: Build ${{ matrix.variant }}
         shell: pwsh
         run: python -m PyInstaller --clean --noconfirm '${{ matrix.spec }}'
+
+      - name: Move OneDir themes next to EXE
+        if: matrix.variant == 'OneDir'
+        shell: pwsh
+        run: |
+          $source = 'dist/SpyderMUSIC/runtime/themes'
+          $destination = 'dist/SpyderMUSIC/themes'
+
+          if (-not (Test-Path -LiteralPath $source -PathType Container)) {
+            throw "Themes directory not found: $source"
+          }
+
+          if (Test-Path -LiteralPath $destination) {
+            throw "Destination already exists: $destination"
+          }
+
+          Move-Item -LiteralPath $source -Destination $destination
+
+          if (-not (Test-Path -LiteralPath $destination -PathType Container)) {
+            throw "Failed to move themes to: $destination"
+          }
+
+          Write-Host "Themes moved successfully next to SpyderMUSIC.exe"
 
       - name: Package build output
         shell: pwsh
