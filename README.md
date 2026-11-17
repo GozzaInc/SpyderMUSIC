@@ -46,7 +46,27 @@ The intended distribution includes the Python source, original themes and graphi
 - **Python 3.13** (the version used to develop SpyderMUSIC).
 - The Python packages required by the project, installed in your own environment.
 - A compatible libmpv build and any runtime components required by that build.
-- API keys or optional services for the integrations you choose to use.
+- A **Last.fm API key** for Scout music discovery and metadata enrichment.
+- A **contact email address** for Wikidata lookups of artist names written in non-Latin scripts, when using that functionality.
+
+### API configuration
+
+**Last.fm API key (required for Scout)**
+
+Scout uses Last.fm to retrieve music metadata and tags. Obtain a free API key at
+https://www.last.fm/api/account/create and enter it in SpyderMUSIC's settings.
+If the key is missing, Scout reports that it is not configured rather than
+silently appearing ready.
+
+**Wikidata contact email (for non-Latin artist names)**
+
+For Wikidata-assisted lookups of artist names written in scripts such as
+Cyrillic, Japanese, or Korean, configure a valid contact email address in
+SpyderMUSIC. This identifies the application's requests and provides a contact
+point; a Wikidata account is not required for this purpose.
+
+Neither configuration is needed simply to play local audio files.
+
 
 Install the direct Python dependencies in a fresh Python 3.13 environment:
 
