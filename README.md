@@ -64,14 +64,12 @@ The commands assume that `requirements.txt` and `SpyderMUSIC.py` are present in 
 The project provides two **PyInstaller spec configurations** for building your own Windows executable:
 
 - **OneDir:** produces an application directory containing the executable and its bundled runtime files.
-- **OneFile:** produces a single executable that extracts bundled runtime files when launched.
 
 Install PyInstaller in the same environment:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install pyinstaller
 .\.venv\Scripts\python.exe -m PyInstaller --clean --noconfirm SpyderMUSIC_OneDir.spec
-.\.venv\Scripts\python.exe -m PyInstaller --clean --noconfirm SpyderMUSIC_OneFile.spec
 ```
 
 **Required local build assets:** The documented specs expect `libmpv_windows-x86_64.dll` in the project root and `data\icon.ico` in the project data directory. Supply the matching libmpv build and project icon before building. The DLL's applicable third-party license notices must accompany any redistributed binary.
