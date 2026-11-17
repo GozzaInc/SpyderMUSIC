@@ -14,7 +14,7 @@ from pathlib import Path
 from PyInstaller.utils.hooks import collect_all
 
 # Project files are relative to the spec in the SpyderMUSIC project directory.
-datas = [('data\\icon.ico', '.')]
+datas = [('data\\icon.ico', ('themes', 'themes'), '.')]
 binaries = [('libmpv_windows-x86_64.dll', '.')]
 hiddenimports = []
 
