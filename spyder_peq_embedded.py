@@ -1,6 +1,8 @@
 """SpyderMUSIC PEQ bridge: independent, theme-placeable panel and dual-deck DSP."""
 from pathlib import Path
 import json
+import shutil
+import sys
 from PySide6.QtCore import Qt, QTimer, QSignalBlocker
 from spyder_peq_compact_filters import Window
 
@@ -32,8 +34,23 @@ class SpyderPEQWidget(Window):
     EQ state is independent of themes and shared across both decks.
     """
     def __init__(self, engine, parent=None):
-        self._state_path = Path(__file__).resolve().parent / 'data' / 'peq_state.json'
+        # Store editable user state next to the EXE, not inside PyInstaller runtime.
+        # Running from Python source retains the original source-relative location.
+        base_dir = (Path(sys.executable).resolve().parent
+                    if getattr(sys, 'frozen', False)
+                    else Path(__file__).resolve().parent)
+        self._state_path = base_dir / 'data' / 'peq_state.json'
         super().__init__(DualDeckProxy(engine))
+        # One-time migration from existing OneDir builds (runtime/data).
+        # Never overwrite an already existing state at the new location.
+        legacy_path = Path(__file__).resolve().parent / 'data' / 'peq_state.json'
+        if legacy_path != self._state_path and legacy_path.is_file() and not self._state_path.exists():
+            try:
+                self._state_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(legacy_path, self._state_path)
+            except OSError as exc:
+                self.status.setText('PEQ state migration failed: ' + str(exc))
+                self.status.show()
         self.setParent(parent)
         self.setObjectName('peq_panel')
         # Avoid the standalone widget stylesheet overriding the active QSS theme.
