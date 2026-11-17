@@ -1,0 +1,18 @@
+# SpyderMUSIC V4: direct Python dependencies (Python 3.13, Windows)
+# Derived from direct imports and the current PyInstaller specs, not a frozen lockfile.
+# Install transitive dependencies via pip. Do not interpret these as tested version pins.
+PySide6
+numpy
+av
+Pillow
+chromadb
+onnxruntime
+tokenizers
+tqdm
+psutil
+mutagen
+requests
+packaging
+yt-dlp[default]
+yt-dlp-ejs
+ytmusicapi

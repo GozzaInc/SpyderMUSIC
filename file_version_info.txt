@@ -1,0 +1,29 @@
+# UTF-8
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(4, 0, 0, 0),
+    prodvers=(4, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+    ),
+  kids=[
+    StringFileInfo(
+      [
+      StringTable(
+        u'040904b0',
+        [StringStruct(u'CompanyName', u'Gozza Inc.'),
+        StringStruct(u'FileDescription', u'SpyderMUSIC V4 - Music Discovery & Control Center'),
+        StringStruct(u'FileVersion', u'4.0.0'),
+        StringStruct(u'InternalName', u'SpyderMUSIC'),
+        StringStruct(u'LegalCopyright', u'Gozza Inc. © 2026 Honest Rock Music'),
+        StringStruct(u'OriginalFilename', u'SpyderMUSIC.exe'),
+        StringStruct(u'ProductName', u'SpyderMUSIC'),
+        StringStruct(u'ProductVersion', u'4.0.0')])
+      ]), 
+    VarFileInfo([VarStruct(u'Translation', [1033, 1200])]) # 1033 = English (United States)
+  ]
+)
